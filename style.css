@@ -11,13 +11,12 @@ html{
 
 h2{
     font-size: 40px;
+    cursor: default;
 }
 
 .header{
-    margin: 0;
     background-image: url("https://grupoconcresul.com.br/home/wp-content/uploads/2024/08/header-bd.png");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     
     display: flex;
@@ -184,8 +183,6 @@ h2{
     justify-content: center;
     margin: 80px 150px;
 
-    border: 1px solid black;
-    border-radius: 40px;
     padding-bottom: 80px;
 }
 
@@ -197,25 +194,39 @@ h2{
     gap: 100px;
 }
 
+.incorporadora{
+    position: relative;
+    overflow: hidden;
+}
+
+.incorporadora *{
+    position: relative;
+    z-index: 2;
+}
+
 .construtora, .incorporadora{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
     max-width: 500px;
 
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
 
-    background-color: rgb(243, 243, 243);
+    transition: transform 0.3s ease;
+}
+
+.construtora:hover, .incorporadora:hover{
+    transform: translateY(-10px);
 }
 
 .construtora p, .incorporadora p{
     font-size: 20px;
     text-align: center;
-    flex-grow: 1;
+    cursor: default;
 }
 
 .construtora button, .incorporadora button{
@@ -231,4 +242,10 @@ h2{
 
     font-family: Montserrat;
     font-size: 16px;
+
+    transition: transform 0.3s ease;
+}
+
+.construtora button:hover, .incorporadora button:hover{
+    transform: scale(1.1);
 }

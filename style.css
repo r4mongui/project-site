@@ -150,7 +150,7 @@ html{
 .inicio .descricao-estatisticas{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
     max-width: 50%;
     color: white;

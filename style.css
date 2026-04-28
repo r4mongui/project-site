@@ -9,243 +9,79 @@ html{
     scroll-behavior: smooth;
 }
 
-h2{
-    font-size: 40px;
-    cursor: default;
-}
-
 .header{
-    background-image: url("https://grupoconcresul.com.br/home/wp-content/uploads/2024/08/header-bd.png");
-    background-size: cover;
-    background-position: center;
-    
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-
-    border-bottom: 1px solid black;
-
     position: relative;
-    padding-bottom: 20px;
-    z-index: 2;
-}
 
-.header img{
-    width: 100%;
-    max-width: 500px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
 }
 
-.barra-navegacao{
-    background-color: lightgray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    border: 1px solid black;
-    
+.header nav{
     position: absolute;
-    bottom: 0;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translateX(-50%);
 }
 
-.barra-navegacao ul{
-    display: flex;
-    gap: 25px;
-    padding: 10px 25px;
+.logo{
     margin: 0;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-.barra-navegacao ul a{
+.logo p{
+    font-size: 12px;
+    margin-top: -18px;
+}
+
+.header h1{
+    font-size: 22px;
+}
+
+.header a{
     text-decoration: none;
     color: black;
 }
 
-.barra-navegacao li{
-    list-style: none;
+.header h1 span{
+    color: rgb(49, 109, 179);
 }
 
-.barra-navegacao a:hover{
-    opacity: 0.7;
-    transition: 0.3s;
-}
-
-/* --------------- DIV 1 --------------- */
-
-.carrossel{
-    position: relative;
-    overflow: hidden;
-}
-
-.slides{
+.header ul{
     display: flex;
-    width: 100%;
-    height: 750px;
-    transition: transform 0.6s ease-in-out;
-}
-
-.slide{
-    min-width: 100%;
-    position: relative;
-}
-
-.slide.ativo{
-    opacity: 1;
-    position: relative;
-}
-
-.slide img{
-    width: 100%;
-    height: 750px;
-    object-fit: cover;
-    filter: brightness(30%);
-}
-
-.texto-slide{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    cursor: default;
-    max-width: 800px;
-    line-height: 1.4;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-}
-
-.texto-slide h2{
-    font-size: 28px;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.texto-slide p{
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.prev, .next{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 40px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.prev{
-    left: 20px;
-}
-
-.next{
-    right: 20px;
-}
-
-/* --------------- DIV 2 --------------- */
-
-.historia{
-    margin: 80px 150px;
-}
-
-.texto-historia{
-    width: 100%;
-    align-items: center;
-}
-
-.texto-historia p{
-    font-size: 20px;
-}
-
-.image-historia{
-    margin: 0;
-}
-
-.image-historia img{
-    width: 100%;
-    height: 750px;
-    object-fit: cover;
-}
-
-/* --------------- DIV 3 --------------- */
-
-.area-atuacao{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 80px 150px;
-
-    padding-bottom: 80px;
-}
-
-.classes{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 100px;
-}
-
-.incorporadora{
-    position: relative;
-    overflow: hidden;
-}
-
-.incorporadora *{
-    position: relative;
-    z-index: 2;
-}
-
-.construtora, .incorporadora{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    max-width: 500px;
-
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 20px;
-
-    transition: transform 0.3s ease;
-}
-
-.construtora:hover, .incorporadora:hover{
-    transform: translateY(-10px);
-}
-
-.construtora p, .incorporadora p{
-    font-size: 20px;
-    text-align: center;
-    cursor: default;
-}
-
-.construtora button, .incorporadora button{
-    width: 100%;
-    max-width: 250px;
-    padding: 25px 20px;
-
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: black;
-    cursor: pointer;
-
-    font-family: Montserrat;
+    gap: 50px;
     font-size: 16px;
-
-    transition: transform 0.3s ease;
 }
 
-.construtora button:hover, .incorporadora button:hover{
-    transform: scale(1.1);
+.header li{
+    list-style-type: none;
+}
+
+.header li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    transition: 0.2s ;
+}
+
+.header li a:hover{
+    color: rgba(0, 0, 0, 0.493);
+}
+
+.btn-contato{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px 40px;
+    font-family: Montserrat;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-contato:hover{
+    color: white;
+    background-color: rgb(20, 58, 100);
+    border: 1px solid rgb(20, 58, 100);
 }

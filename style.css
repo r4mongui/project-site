@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
     font-family: Montserrat;
 }
 
@@ -9,64 +14,62 @@ html{
     scroll-behavior: smooth;
 }
 
+/* ===================== */
+/* LAYOUT - HEADER */
+/* ===================== */
+
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 20px;
+    padding: 20px 20px 0 120px;
+    background-color: whitesmoke;
 }
 
-.header nav{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.logo{
-    margin: 0;
-}
-
-.logo p{
-    font-size: 12px;
-    margin-top: -18px;
-}
-
-.header h1{
+.logo h1{
     font-size: 22px;
 }
 
-.header a{
+.logo a{
     text-decoration: none;
     color: black;
 }
 
-.header h1 span{
+.logo span{
     color: rgb(49, 109, 179);
 }
 
-.header ul{
+/* ===================== */
+/* NAVEGAÇÃO */
+/* ===================== */
+
+.header nav ul{
     display: flex;
     gap: 50px;
+    list-style: none;
     font-size: 16px;
 }
 
-.header li{
-    list-style-type: none;
-}
-
-.header li a{
+.header nav a{
     text-decoration: none;
     color: black;
-    font-weight: bolder;
-    transition: 0.2s ;
+    font-weight: bold;
+    transition: 0.2s;
 }
 
-.header li a:hover{
-    color: rgba(0, 0, 0, 0.493);
+.header nav a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* ===================== */
+/* COMPONENTES */
+/* ===================== */
+
+.acoes a{
+    text-decoration: none;
+    color: black;
 }
 
 .btn-contato{
@@ -74,7 +77,7 @@ html{
     border: 1px solid black;
     padding: 10px 40px;
     font-family: Montserrat;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 16px;
     cursor: pointer;
     transition: 0.2s ease;
@@ -83,5 +86,93 @@ html{
 .btn-contato:hover{
     color: white;
     background-color: rgb(20, 58, 100);
-    border: 1px solid rgb(20, 58, 100);
+    border-color: rgb(20, 58, 100);
+}
+
+/* ===================== */
+/* HERO / INICIO */
+/* ===================== */
+
+.inicio{
+    position: relative;
+    min-height: 850px;
+
+    padding: 150px 0 0 50px;
+
+    background: url(images/obras.jpg) center/cover no-repeat;
+}
+
+.inicio::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        whitesmoke 0%,
+        rgba(255,255,255,0) 40%,
+        black 100%
+    );
+}
+
+.inicio .textos{
+    position: relative;
+    z-index: 2;
+}
+
+.inicio .intro p{
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: rgb(65, 118, 179);
+}
+
+.inicio .headline h2{
+    font-size: 100px;
+    letter-spacing: 5px;
+}
+
+.inicio .headline span{
+    color: rgb(65, 118, 179);
+}
+
+.inicio hr{
+    height: 1px;
+    width: 50%;
+    background-color: white;
+    border: none;
+    margin: 20px 0;
+}
+
+/* ===================== */
+/* DESCRIÇÃO + ESTATÍSTICAS */
+/* ===================== */
+
+.inicio .descricao-estatisticas{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    max-width: 50%;
+    color: white;
+}
+
+.inicio .estatisticas{
+    display: flex;
+    gap: 40px;
+}
+
+.inicio .estatistica-item{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.inicio .estatistica-item p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.inicio .estatistica-item span{
+    font-size: 14px;
+    letter-spacing: 3px;
 }

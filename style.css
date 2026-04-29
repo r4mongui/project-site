@@ -467,3 +467,84 @@ html{
     font-size: 14px;
     font-weight: 600;
 }
+
+/* ===================== */
+/*   TRABALHE CONOSCO    */
+/* ===================== */
+
+.trabalhe-conosco{
+    padding: 120px 48px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(81, 92, 104);
+    color: white;
+}
+
+.trabalhe-content{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
+}
+
+.trabalhe-header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.trabalhe-cima p{
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: rgb(209, 230, 255);
+    margin-bottom: 15px;
+}
+
+.trabalhe-baixo{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.trabalhe-baixo p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.trabalhe-baixo h1{
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.trabalhe-baixo span{
+    color: rgb(209, 230, 255);
+}
+
+.trabalhe-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.formulario-header h1{
+    font-size: 36px;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 20px;
+}
+
+.nome, .email, 
+.telefone, .mensagem{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

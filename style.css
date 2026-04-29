@@ -183,11 +183,17 @@ html{
 /* ===================== */
 
 .historia{
-    padding-top: 120px;
+    padding: 120px 48px;
     display: flex;
     justify-content: center;
     gap: 40px;
-    min-height: 500px;
+}
+
+.historia-container{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    gap: 40px;
 }
 
 .historia-header{
@@ -251,4 +257,100 @@ html{
 .diferencial p{
     font-weight: 500;
     font-size: 24px;
+}
+
+/* ===================== */
+/*   ÁREAS DE ATUAÇÃO    */
+/* ===================== */
+
+.areas{
+    background-color: whitesmoke;
+    padding: 120px 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.areas-content{
+    width: 100%;
+    max-width: 1300px;
+}
+
+.areas-header{
+    margin-bottom: 90px;
+}
+
+.areas-label{
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: rgb(49, 109, 179);
+    margin-bottom: 15px;
+}
+
+.areas-title{
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.areas-title span{
+    color: rgb(49, 109, 179);
+}
+
+.areas-grid{
+    display: flex;
+    gap: 35px;
+}
+
+.area-card{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.area-card .card-header{
+    transition: transform 0.3s ease;
+}
+
+.area-image{
+    overflow: hidden;
+}
+
+.area-image img{
+    width: 100%;
+    max-width: 405px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.area-card:hover .area-image img{
+    transform: scale(1.05);
+}
+
+.area-card:hover .card-header{
+    transform: translateY(-10px);
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.area-numero{
+    border-top: 2px solid black;
+    padding-top: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(49, 109, 179);
+}
+
+.area-titulo{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.area-descricao{
+    font-size: 14px;
+    letter-spacing: 2px;
 }

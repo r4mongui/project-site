@@ -15,7 +15,7 @@
         </div>
 
         <nav>
-            <ul>
+            <ul class="opcoes">
                 <li><a href="">HISTÓRIA</a></li>
                 <li><a href="">ATUAÇÃO</a></li>
                 <li><a href="">PORTFÓLIO</a></li>
@@ -328,7 +328,58 @@
             <div class="carrers-content">
 
                 <aside class="carrers-sidebar">
-                    <h3 class="carrers-sidebar-title">SE APLIQUE</h3>
+                    <h3 class="carrers-sidebar-title">SE APLIQUE EM UMA<br>DE NOSSAS <span>VAGAS</span></h3>
+
+                    <div class="vagas-group">
+                        <div class="vagas">
+                            <div class="vagas-content">
+                                <div class="vagas-titulo">
+                                    <h4>VAGA DE EMPREGO 1</h4>
+                                </div>
+                                <div class="vagas-descricao">
+                                    <p>Descrição vaga • Presencial (Rondonópolis)</p>
+                                </div>
+                            </div>
+                            <button>APLICAR <img src="images/seta-para-cima-direita.png"></button>
+                        </div>
+
+                        <div class="vagas">
+                            <div class="vagas-content">
+                                <div class="vagas-titulo">
+                                    <h4>VAGA DE EMPREGO 1</h4>
+                                </div>
+                                <div class="vagas-descricao">
+                                    <p>Descrição vaga • Presencial (Rondonópolis)</p>
+                                </div>
+                            </div>
+                            <button>APLICAR <img src="images/seta-para-cima-direita.png"></button>
+                        </div>
+
+                        <div class="vagas">
+                            <div class="vagas-content">
+                                <div class="vagas-titulo">
+                                    <h4>VAGA DE EMPREGO 1</h4>
+                                </div>
+                                <div class="vagas-descricao">
+                                    <p>Descrição vaga • Presencial (Rondonópolis)</p>
+                                </div>
+                            </div>
+                            <button>APLICAR <img src="images/seta-para-cima-direita.png"></button>
+                        </div>
+
+                        <div class="vagas-bottom">
+                            <div class="vagas-content">
+                                <div class="vagas-titulo">
+                                    <h4>VAGA DE EMPREGO 1</h4>
+                                </div>
+                                <div class="vagas-descricao">
+                                    <p>Descrição vaga • Presencial (Rondonópolis)</p>
+                                </div>
+                            </div>
+                            <button>APLICAR <img src="images/seta-para-cima-direita.png"></button>
+                        </div>
+                    </div>
+                    
                 </aside>
 
                 <div class="carrers-form">
@@ -354,7 +405,7 @@
 
                         <div class="form-group">
                             <label>TELEFONE:<span>*</span></label>
-                            <input type="text" required>
+                            <input type="text"  id="telefone" required>
                         </div>
 
                         <div class="form-group">
@@ -363,8 +414,10 @@
                         </div>
 
                         <div class="form-group">
-                            <label>CURRÍCULO:<span>*</span></label>
-                            <input type="file" required>
+                            <label class="file-upload">
+                                <input type="file" required>
+                                <span>ANEXAR CURRÍCULO</span>
+                            </label>
                         </div>
 
                         <button type="submit">ENVIAR</button>
@@ -374,5 +427,7 @@
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

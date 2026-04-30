@@ -8,6 +8,8 @@
 
 body{
     font-family: Montserrat;
+    padding-top: 80px;
+    background-color: whitesmoke;
 }
 
 html{
@@ -22,10 +24,39 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
-    padding: 20px 20px 0 120px;
-    background-color: whitesmoke;
+    padding: 20px 120px 20px 120px;
+    background-color: transparent;
+
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.header.scrolled{
+    background-color: rgba(20, 58, 100, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 120px 15px 120px;
+
+    .logo a, .opcoes a{
+        color: white;
+    };
+
+    .btn-contato{
+        color: white;
+        border-color: white;
+    };
+
+    .btn-contato:hover{
+        background-color: rgb(49, 109, 179);
+        border-color: rgb(49, 109, 179);
+        color: rgb(30, 40, 50);
+    }
 }
 
 .logo h1{
@@ -515,6 +546,15 @@ html{
     color: rgb(209, 230, 255);
 }
 
+.carrers-sidebar{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding-right: 125px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .carrers-descricao{
     font-size: 16px;
     letter-spacing: 1px;
@@ -527,13 +567,19 @@ html{
 }
 
 .carrers-sidebar-title{
-    font-size: 28px;
+    font-size: 36px;
+}
+
+.carrers-sidebar-title span{
+    color: rgb(209, 230, 255);
 }
 
 .carrers-form{
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    padding-left: 120px;
 }
 
 .carrers-form-header h3{
@@ -603,6 +649,36 @@ html{
     border-color: rgb(209, 230, 255);
 }
 
+.file-upload{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 55px;
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.file-upload span{
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.file-upload input{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-upload:hover{
+    border-color: rgb(209, 230, 255);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 .form button{
     margin-top: 10px;
     height: 55px;
@@ -624,4 +700,73 @@ html{
 .form button:active{
     transform: translateY(0);
     box-shadow: none;
+}
+
+.vagas, .vagas-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px 20px;
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.vagas-bottom{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.vagas-group{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.vagas button, .vagas-bottom button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    padding: 10px 20px;
+
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    background-color: rgb(209, 230, 255);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.vagas button img, .vagas-bottom button img{
+    object-fit: cover;
+    width: 14px;
+}
+
+.vagas-content{
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.vagas-titulo{
+    font-size: 24px;
+}
+
+.vagas-descricao{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 2px;
+}
+
+.vagas:hover, .vagas-bottom:hover{
+    background-color: rgba(30, 40, 50, 0.3)
+}
+
+.vagas:hover button,
+.vagas-bottom:hover button{
+    background-color: white;
+    color: rgb(30, 40, 50);
 }

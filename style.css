@@ -870,3 +870,450 @@ html{
 .rodape-links p:hover{
     color: white;
 }
+
+@media (max-width: 1024px) {
+    .header{
+        padding: 15px 50px;
+    }
+
+    .header nav{
+        display: none;
+    }
+
+    .inicio .headline h2{
+        font-size: 60px;
+    }
+
+    .inicio .descricao-estatisticas{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        max-width: 100%;
+    }
+
+    .area-grid{
+        flex-direction: column;
+    }
+
+    .portfolio-item,
+    .portfolio-item-left{
+        flex-direction: column;
+    }
+
+    .carrers-content{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .carrers-sidebar{
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .carrers-form{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px){
+
+    /* ===================== */
+    /* GERAL */
+    /* ===================== */
+
+    body{
+        padding-top: 70px;
+    }
+
+    section{
+        padding: 80px 20px !important;
+    }
+
+    .section-title{
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    /* ===================== */
+    /* HEADER */
+    /* ===================== */
+
+    .header{
+        padding: 15px 20px;
+    }
+
+    .header nav{
+        display: none; /* depois você pode colocar menu mobile */
+    }
+
+    .btn-contato{
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    /* ===================== */
+    /* HERO */
+    /* ===================== */
+
+    .inicio{
+        padding: 120px 20px 0 20px;
+    }
+
+    .inicio .headline h2{
+        padding-top: 40px;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    .inicio hr{
+        width: 100%;
+    }
+
+    .inicio .descricao-estatisticas{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 200px;
+        max-width: 100%;
+    }
+
+    .descricao p{
+        color: rgb(57, 77, 97);
+    }
+
+    .inicio .estatisticas{
+        gap: 20px;
+    }
+
+    .header.scrolled{
+    background-color: rgba(20, 58, 100, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 50px 15px 50px;
+
+    .logo a, .opcoes a{
+        color: white;
+    };
+
+    .btn-contato{
+        color: white;
+        border-color: white;
+    };
+
+    .btn-contato:hover{
+        background-color: rgb(49, 109, 179);
+        border-color: rgb(49, 109, 179);
+        color: white;
+    };
+
+    .logo a span{
+        color: rgb(137, 192, 218);
+    };
+}
+
+    /* ===================== */
+    /* HISTÓRIA */
+    /* ===================== */
+
+    .historia-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .historia-header{
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .historia-title{
+        font-size: 36px;
+    }
+
+    .historia-destaque{
+        font-size: 22px;
+    }
+
+    .historia-diferenciais{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* ===================== */
+    /* ÁREAS */
+    /* ===================== */
+
+    .areas-grid{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .area-card{
+        gap: 15px;
+    }
+
+    /* ===================== */
+    /* PORTFÓLIO */
+    /* ===================== */
+
+    .portfolio-container{
+        gap: 60px;
+    }
+
+    .portfolio-item,
+    .portfolio-item-left{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .portfolio-info{
+        gap: 30px;
+    }
+
+    .portfolio-name{
+        font-size: 26px;
+    }
+
+    .portfolio-meta{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* ===================== */
+    /* CARRERS */
+    /* ===================== */
+
+    .carrers-content{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .carrers-hero{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .carrers-sidebar{
+        border-right: none;
+        padding-right: 0;
+        gap: 40px;
+    }
+
+    .carrers-form{
+        padding-left: 0;
+    }
+
+    /* ===================== */
+    /* VAGAS */
+    /* ===================== */
+
+    .vagas,
+    .vagas-bottom{
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 0;
+    }
+
+    .vagas button, .vagas-bottom button{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .vagas-titulo{
+        font-size: 20px;
+    }
+
+    /* ===================== */
+    /* FORM */
+    /* ===================== */
+
+    .form{
+        max-width: 100%;
+    }
+
+    .form-group input,
+    .form-group textarea{
+        font-size: 16px;
+    }
+
+    .form button{
+        width: 100%;
+    }
+
+    /* ===================== */
+    /* RODAPÉ */
+    /* ===================== */
+
+    .rodape-infos{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .rodape-final{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px){
+
+    /* ===================== */
+    /* TIPOGRAFIA */
+    /* ===================== */
+
+    .inicio .headline h2{
+        font-size: 32px;
+    }
+
+    .section-title{
+        font-size: 28px;
+    }
+
+    .portfolio-name{
+        font-size: 22px;
+    }
+
+    .area-titulo{
+        font-size: 18px;
+    }
+
+    .historia-destaque{
+        font-size: 18px;
+    }
+
+    /* ===================== */
+    /* BOTÕES */
+    /* ===================== */
+
+    .btn-contato{
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+
+    .form button{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    /* ===================== */
+    /* ESPAÇAMENTO */
+    /* ===================== */
+
+    section{
+        padding: 60px 15px !important;
+    }
+
+    .inicio{
+        padding: 100px 15px 0 15px;
+    }
+}
+
+@media (max-width: 1366px){
+
+    /* ===================== */
+    /* GERAL */
+    /* ===================== */
+
+    section{
+        padding: 100px 60px;
+    }
+
+    .section-title{
+        font-size: 48px;
+    }
+
+    /* ===================== */
+    /* HEADER */
+    /* ===================== */
+
+    .header{
+        padding: 15px 60px;
+    }
+
+    .header nav ul{
+        gap: 30px;
+    }
+
+    /* ===================== */
+    /* HERO */
+    /* ===================== */
+
+    .inicio{
+        padding: 140px 0 0 60px;
+    }
+
+    .inicio .headline h2{
+        font-size: 70px;
+        letter-spacing: 3px;
+    }
+
+    .inicio .descricao-estatisticas{
+        max-width: 70%;
+    }
+
+    /* ===================== */
+    /* HISTÓRIA */
+    /* ===================== */
+
+    .historia-title{
+        font-size: 48px;
+    }
+
+    .historia-destaque{
+        font-size: 24px;
+    }
+
+    /* ===================== */
+    /* ÁREAS */
+    /* ===================== */
+
+    .areas-grid{
+        gap: 25px;
+    }
+
+    /* ===================== */
+    /* PORTFÓLIO */
+    /* ===================== */
+
+    .portfolio-name{
+        font-size: 30px;
+    }
+
+    .portfolio-info{
+        gap: 35px;
+    }
+
+    /* ===================== */
+    /* CARRERS */
+    /* ===================== */
+
+    .carrers-sidebar{
+        padding-right: 60px;
+    }
+
+    .carrers-form{
+        padding-left: 60px;
+    }
+
+    .carrers-sidebar-title{
+        font-size: 32px;
+    }
+
+    /* ===================== */
+    /* VAGAS */
+    /* ===================== */
+
+    .vagas,
+    .vagas-bottom{
+        gap: 60px;
+        padding: 30px 15px;
+    }
+
+    /* ===================== */
+    /* FORM */
+    /* ===================== */
+
+    .form{
+        max-width: 450px;
+    }
+}

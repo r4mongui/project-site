@@ -55,8 +55,12 @@ html{
     .btn-contato:hover{
         background-color: rgb(49, 109, 179);
         border-color: rgb(49, 109, 179);
-        color: rgb(30, 40, 50);
-    }
+        color: white;
+    };
+
+    .logo a span{
+        color: rgb(137, 192, 218);
+    };
 }
 
 .logo h1{
@@ -507,7 +511,7 @@ html{
     padding: 120px 80px;
     display: flex;
     justify-content: center;
-    background-color: rgb(81, 92, 104);
+    background-color: rgb(57, 77, 97);
     color: white;
 }
 
@@ -769,4 +773,100 @@ html{
 .vagas-bottom:hover button{
     background-color: white;
     color: rgb(30, 40, 50);
+}
+
+/* ===================== */
+/*        RODAPÉ         */
+/* ===================== */
+
+.rodape{
+    padding: 80px 48px;
+    display: flex;
+    justify-content: center;
+
+    background-color: rgba(20, 58, 100, 0.9);
+}
+
+.rodape-content{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-infos{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 60px;
+}
+
+.rodape-header h1{
+    padding-bottom: 15px;
+    color: white;
+    font-size: 24px;
+}
+
+.rodape-header h1 span{
+    color: rgb(137, 192, 218);
+}
+
+.rodape-header p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+}
+
+.rodape-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rodape-contato h2{
+    padding-bottom: 15px;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.rodape-contato p{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.rodape-final{
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 40px;
+}
+
+.rodape-final h2{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.rodape-links{
+    display: flex;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+
+    gap: 25px;
+    letter-spacing: 1px;
+}
+
+.rodape-links p{
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.rodape-links p:hover{
+    color: white;
 }

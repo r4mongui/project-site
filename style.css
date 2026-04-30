@@ -951,6 +951,10 @@ html{
         font-size: 14px;
     }
 
+    h2{
+        font-size: 30px !important;
+    }
+
     /* ===================== */
     /* HERO */
     /* ===================== */
@@ -959,9 +963,8 @@ html{
         padding: 120px 20px 0 20px;
     }
 
-    .inicio .headline h2{
+    .headline h2{
         padding-top: 40px;
-        font-size: 40px;
         letter-spacing: 2px;
     }
 

@@ -939,7 +939,7 @@ html{
     /* ===================== */
 
     .header{
-        padding: 15px 20px;
+        padding: 15px 20px !important;
     }
 
     .header nav{
@@ -949,10 +949,6 @@ html{
     .btn-contato{
         padding: 8px 20px;
         font-size: 14px;
-    }
-
-    h2{
-        font-size: 30px !important;
     }
 
     /* ===================== */
@@ -965,6 +961,7 @@ html{
 
     .headline h2{
         padding-top: 40px;
+        font-size: 36px !important;
         letter-spacing: 2px;
     }
 
@@ -991,7 +988,7 @@ html{
     background-color: rgba(20, 58, 100, 0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    padding: 15px 50px 15px 50px;
+    padding: 15px 20px 15px 20px;
 
     .logo a, .opcoes a{
         color: white;
@@ -1057,6 +1054,14 @@ html{
     /* PORTFÓLIO */
     /* ===================== */
 
+    .portfolio-header .section-title{
+        font-size: 30px !important;
+    }
+
+    .portfolio-header .section-label{
+        color: rgb(49, 109, 179);
+    }
+
     .portfolio-container{
         gap: 60px;
     }
@@ -1072,7 +1077,7 @@ html{
     }
 
     .portfolio-name{
-        font-size: 26px;
+        font-size: 26px !important;
     }
 
     .portfolio-meta{
@@ -1128,6 +1133,9 @@ html{
     /* ===================== */
     /* FORM */
     /* ===================== */
+    .carrers-form{
+        padding: 0px !important;
+    }
 
     .form{
         max-width: 100%;

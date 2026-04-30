@@ -472,79 +472,156 @@ html{
 /*   TRABALHE CONOSCO    */
 /* ===================== */
 
-.trabalhe-conosco{
-    padding: 120px 48px;
+.carrers{
+    padding: 120px 80px;
     display: flex;
     justify-content: center;
     background-color: rgb(81, 92, 104);
     color: white;
 }
 
-.trabalhe-content{
+.carrers-container{
     width: 100%;
     max-width: 1300px;
     display: flex;
     flex-direction: column;
-
     gap: 80px;
 }
 
-.trabalhe-header{
-    display: flex;
-    flex-direction: column;
+.carrers-header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 40px;
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
 }
 
-.trabalhe-cima p{
+.section-label{
     font-size: 12px;
     letter-spacing: 5px;
     color: rgb(209, 230, 255);
     margin-bottom: 15px;
 }
 
-.trabalhe-baixo{
+.carrers-hero{
     display: flex;
-    align-items: end;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
-.trabalhe-baixo p{
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: rgba(255, 255, 255, 0.589);
-}
-
-.trabalhe-baixo h1{
+.section-title{
     font-size: 54px;
     font-weight: 900;
 }
 
-.trabalhe-baixo span{
+.section-title span{
     color: rgb(209, 230, 255);
 }
 
-.trabalhe-formulario{
+.carrers-descricao{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.carrers-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrers-sidebar-title{
+    font-size: 28px;
+}
+
+.carrers-form{
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.formulario-header h1{
+.carrers-form-header h3{
     font-size: 36px;
 }
 
-.formulario form{
+.form{
     display: flex;
     flex-direction: column;
-    width: fit-content;
     gap: 20px;
+    width: fit-content;
+
+    width: 100%;
+    max-width: 500px;
 }
 
-.nome, .email, 
-.telefone, .mensagem{
+.form-group{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.form-group label{
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.form-group label span{
+    color: rgb(209, 230, 255);
+    margin-left: 4px;
+}
+
+.form-group input{
+    height: 52px;
+    padding: 0 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    transition: all 0.25s ease;
+}
+
+.form-group:nth-child(4) input{
+    height: 90px;
+}
+
+.form-group input:focus{
+    outline: none;
+    border-color: rgb(209, 230, 255);
+}
+
+.form-group textarea{
+    min-height: 100px;
+    padding: 15px;
+    resize: vertical;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: white;
+    font-family: Montserrat;
+}
+
+.form-group textarea:focus{
+    outline: none;
+    border-color: rgb(209, 230, 255);
+}
+
+.form button{
+    margin-top: 10px;
+    height: 55px;
+    border: none;
+    background-color: rgb(209, 230, 255);
+    color: rgb(30, 40, 50);
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form button:hover{
+    background-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.form button:active{
+    transform: translateY(0);
+    box-shadow: none;
 }

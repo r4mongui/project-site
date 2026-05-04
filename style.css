@@ -390,6 +390,26 @@ html{
     letter-spacing: 2px;
 }
 
+.area-botao a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    background-color: rgb(20, 58, 100);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid rgb(20, 58, 100);
+    transition: all 0.2s ease;
+}
+
+.area-botao a:hover{
+    background-color: transparent;
+    border-color: black;
+    color: black;
+}
+
 /* ===================== */
 /*       PORTFÓLIO       */
 /* ===================== */
@@ -409,7 +429,7 @@ html{
     gap: 80px;
 }
 
-.section-label{
+.portfolio .section-label{
     font-size: 12px;
     letter-spacing: 5px;
     color: rgb(49, 109, 179);
@@ -862,12 +882,14 @@ html{
     letter-spacing: 1px;
 }
 
-.rodape-links p{
+.rodape-links a, .rodape-links p{
     transition: 0.2s ease;
     cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
 }
 
-.rodape-links p:hover{
+.rodape-links a:hover, .rodape-links p:hover{
     color: white;
 }
 
@@ -1068,6 +1090,7 @@ html{
 
     .portfolio-item,
     .portfolio-item-left{
+        display: flex;
         flex-direction: column;
         gap: 25px;
     }

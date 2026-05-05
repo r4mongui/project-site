@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo Concresul</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
     <header class="header">
@@ -16,10 +17,10 @@
 
         <nav>
             <ul class="opcoes">
-                <li><a href="">HISTÓRIA</a></li>
-                <li><a href="">ATUAÇÃO</a></li>
-                <li><a href="">PORTFÓLIO</a></li>
-                <li><a href="">CARREIRAS</a></li>
+                <li><a href="#historia">HISTÓRIA</a></li>
+                <li><a href="#areas-de-atuacao">ATUAÇÃO</a></li>
+                <li><a href="#portfolio">PORTFÓLIO</a></li>
+                <li><a href="#trabalhe-conosco">CARREIRAS</a></li>
             </ul>
         </nav>
 
@@ -72,7 +73,7 @@
         </div>
     </section>
 
-    <section class="historia">
+    <section class="historia"  id="historia">
         <div class="historia-container">
             <div class="historia-header">
                 <p class="historia-label">01 - NOSSA HISTÓRIA</p>
@@ -120,7 +121,7 @@
         </div>
     </section>
 
-    <section class="areas">
+    <section class="areas" id="areas-de-atuacao">
 
         <div class="areas-content">
 
@@ -135,64 +136,69 @@
             <div class="areas-grid">
 
                 <div class="area-card">
-                    <div class="card-header">
-                        <p class="area-numero">01</p>
-                        <h3 class="area-titulo">INCORPORAÇÃO IMOBILIÁRIA</h3>
-                        <p class="area-descricao">
-                            Prospecção de terrenos, viabilidade,<br>
-                            lançamento e gestão de empreendimentos<br>
-                            residenciais e comerciais de alto padrão.
-                        </p>
-                    </div>
-                    <div class="area-image">
-                        <img src="images/area-corporativo.jpg" alt="">
-                    </div>
-                    <div class="area-botao">
-                        <a href="sub-pages/incorporacao.html">VER MAIS</a>
-                    </div>
+                    <a href="sub-pages/incorporacao.html">
+                        <div class="card-header">
+                            <p class="area-numero">01</p>
+                            <h3 class="area-titulo">INCORPORAÇÃO IMOBILIÁRIA</h3>
+                            <p class="area-descricao">
+                                Prospecção de terrenos, viabilidade,<br>
+                                lançamento e gestão de empreendimentos<br>
+                                residenciais e comerciais de alto padrão.
+                            </p>
+                            <p class="area-botao">VER INCORPORAÇÕES <i class="bi bi-arrow-right"></i>
+                            </p>
+                        </div>
+                        <div class="area-image">
+                            <img src="images/area-corporativo.jpg" alt="">
+                        </div>
+                    </a>
                 </div>
 
                 <div class="area-card">
-                    <div class="card-header">
-                        <p class="area-numero">02</p>
-                        <h3 class="area-titulo">CONSTRUÇÃO RESIDENCIAL</h3>
-                        <p class="area-descricao">
-                            Edifícios residenciais executados<br> 
-                            com equipe própria, controle rigoroso<br> cronograma e padrão de acabamento.
-                        </p>
-                    </div>
-                    <div class="area-image">
-                        <img src="images/area-industrial.jpg" alt="">
-                    </div>
-                    <div class="area-botao">
-                        <a href="#">VER MAIS</a>
-                    </div>
+                    <a href="sub-pages/construcao.html">
+                        <div class="card-header">
+                            <p class="area-numero">02</p>
+                            <h3 class="area-titulo">CONSTRUÇÃO RESIDENCIAL</h3>
+                            <p class="area-descricao">
+                                Edifícios residenciais executados<br> 
+                                com equipe própria, controle rigoroso<br> cronograma e padrão de acabamento.
+                            </p>
+                            <p class="area-botao">VER CONSTRUÇÕES <i class="bi bi-arrow-right"></i>
+                            </p>
+                        </div>
+                        <div class="area-image">
+                            <img src="images/area-industrial.jpg" alt="">
+                        </div>
+                    </a>
                 </div>
 
                 <div class="area-card">
-                    <div class="card-header">
-                        <p class="area-numero">03</p>
-                        <h3 class="area-titulo">OBRAS CORPORATIVAS & INFRA</h3>
-                        <p class="area-descricao">
-                            Edifícios corporativos, retrofit e obras de<br>
-                            infraestrutura para clientes públicos e<br>
-                            privados em todo o Sul e Sudeste.
-                        </p>
-                    </div>
-                    <div class="area-image">
-                        <img src="images/area-infra.jpg" alt="">
-                    </div>
-                    <div class="area-botao">
-                        <a href="#">VER MAIS</a>
-                    </div>
-                </div>
+                    <a href="sub-pages/infra.html">
+                        <div class="card-header">
+                            <p class="area-numero">03</p>
+                            <h3 class="area-titulo">OBRAS CORPORATIVAS & INFRA</h3>
+                            <p class="area-descricao">
+                                Edifícios corporativos, retrofit e obras de<br>
+                                infraestrutura para clientes públicos e<br>
+                                privados em todo o Sul e Sudeste.
+                            </p>
+                            <p class="area-botao">VER INFRAESTRUTURAS <i class="bi bi-arrow-right"></i>
+                            </p>
 
+                        </div>
+
+                        <div class="area-image">
+                            <img src="images/area-infra.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                
             </div>
 
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
 
         <div class="portfolio-container">
 
@@ -309,7 +315,7 @@
         </div>
     </section>
     
-    <section class="carrers">
+    <section class="carrers" id="trabalhe-conosco">
 
         <div class="carrers-container">
 

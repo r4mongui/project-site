@@ -335,12 +335,17 @@ html{
     gap: 35px;
 }
 
-.area-card{
+.area-card a{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 32px;
     transition: transform 0.3s ease;
     cursor: pointer;
+}
+
+.area-card a{
+    text-decoration: none;
+    color: black;
 }
 
 .area-card .card-header{
@@ -369,20 +374,23 @@ html{
 .card-header{
     display: flex;
     flex-direction: column;
-    gap: 25px;
 }
 
 .area-numero{
     border-top: 2px solid black;
-    padding-top: 25px;
+    padding-top: 24px;
     font-size: 14px;
     font-weight: bold;
     color: rgb(49, 109, 179);
+
+    margin: 0px 0px 16px;
 }
 
 .area-titulo{
     font-size: 22px;
     font-weight: 700;
+
+    margin: 0px 0px 16px;
 }
 
 .area-descricao{
@@ -390,24 +398,13 @@ html{
     letter-spacing: 2px;
 }
 
-.area-botao a{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 15px 0px;
-    background-color: rgb(20, 58, 100);
+.area-botao{
+    margin: 16px 0px 0px;
+    font-size: 12px;
+    color: rgb(65, 118, 179);
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: bold;
-    font-size: 14px;
-    border: 1px solid rgb(20, 58, 100);
-    transition: all 0.2s ease;
-}
-
-.area-botao a:hover{
-    background-color: transparent;
-    border-color: black;
-    color: black;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 /* ===================== */

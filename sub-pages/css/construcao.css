@@ -8,72 +8,12 @@
 
 body{
     font-family: Montserrat;
-    padding-top: 80px;
+
     background-color: whitesmoke;
 }
 
 html{
     scroll-behavior: smooth;
-}
-
-/* ===================== */
-/* LAYOUT - HEADER */
-/* ===================== */
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    padding: 20px 120px 20px 120px;
-    background-color: transparent;
-
-    z-index: 9999;
-    transition: all 0.3s ease;
-}
-
-.header.scrolled{
-    background-color: rgba(20, 58, 100, 0.9);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    padding: 15px 120px 15px 120px;
-
-    .logo a, .opcoes a{
-        color: white;
-    };
-
-    .btn-contato{
-        color: white;
-        border-color: white;
-    };
-
-    .btn-contato:hover{
-        background-color: rgb(49, 109, 179);
-        border-color: rgb(49, 109, 179);
-        color: white;
-    };
-
-    .logo a span{
-        color: rgb(137, 192, 218);
-    };
-}
-
-.logo h1{
-    font-size: 22px;
-}
-
-.logo a{
-    text-decoration: none;
-    color: black;
-}
-
-.logo span{
-    color: rgb(49, 109, 179);
 }
 
 /* ===================== */
